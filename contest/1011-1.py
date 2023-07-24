@@ -1,7 +1,10 @@
 class Solution:
     def shipWithinDays(self, weights: List[int], days: int) -> int:
+        tot = sum(weights)
+        if days == 1:
+            return tot
         length = len(weights)
-        goal = ceil(sum(weights)/days)
+        goal = ceil(tot/days)
         cache = {}
         
         while True:
