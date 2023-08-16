@@ -1,4 +1,4 @@
-class Solution:
+class Solution: #kadane's algo
     def maxSubarraySumCircular(self, nums: List[int]) -> int:
         maxRes = -math.inf
         minSubt = 0
