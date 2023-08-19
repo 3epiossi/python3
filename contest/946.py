@@ -12,7 +12,6 @@ class Solution:
             if rest:
                 stack.append( rest.pop(0) )
                 outcome  = outcome or dfs( rest, stack, result )
-                if outcome == True: return True
                 rest.insert( 0, stack.pop() )
             return outcome
         return dfs( pushed, [], [])
