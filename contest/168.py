@@ -1,4 +1,4 @@
-lass Solution:
+class Solution:
     def convertToTitle(self, columnNumber: int) -> str:
         coeffi = []
         while True:
